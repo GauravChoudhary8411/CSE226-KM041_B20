@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/account_bottom_sheet_container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bottom_sheet_background">
+
+    <RelativeLayout
+        android:id="@+id/relative"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/bottom_img"
+            android:layout_width="80dp"
+            android:layout_height="120dp"
+            android:layout_gravity="center_horizontal"
+            android:elevation="8dp"
+            android:paddingStart="26dp"
+            android:paddingTop="26dp"
+            android:src="@drawable/oberoi"
+            tools:ignore="RtlSymmetry"
+            android:paddingLeft="26dp" />
+
+        <TextView
+            android:id="@+id/hotel_Name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="22dp"
+            android:layout_marginTop="26dp"
+            android:layout_toEndOf="@id/bottom_img"
+            android:text="Oberoi Hotel"
+            android:textAllCaps="false"
+            android:textColor="@android:color/white"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:layout_toRightOf="@id/bottom_img"
+            android:layout_marginLeft="22dp" />
+
+        <LinearLayout
+            android:id="@+id/details"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/hotel_Name"
+            android:layout_marginStart="22dp"
+            android:layout_marginTop="12dp"
+            android:layout_toEndOf="@id/bottom_img"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal"
+            android:layout_toRightOf="@id/bottom_img"
+            android:layout_marginLeft="22dp">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:padding="4dp"
+                android:text="Location: \nMumbai"
+                android:textAllCaps="false"
+                android:textColor="@android:color/white" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:padding="4dp"
+                android:text="Established \n1946"
+                android:textAllCaps="false"
+                android:textColor="@android:color/white" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:padding="4dp"
+                android:text="Rating: \n4.5/5"
+                android:textAllCaps="false"
+                android:textColor="@android:color/white" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/bottom_img"
+            android:layout_marginStart="22dp"
+            android:layout_marginTop="18dp"
+            android:gravity="center_horizontal"
+            android:text="Please Enter Details to Proceed"
+            android:textAllCaps="true"
+            android:textColor="#eb4559"
+            android:textStyle="bold"
+            android:layout_marginLeft="22dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/text"
+            android:layout_marginStart="12dp"
+            android:layout_marginTop="22dp"
+            android:layout_marginEnd="12dp"
+            android:background="@drawable/wrapbox"
+            android:orientation="vertical"
+            android:padding="5dp"
+            >
+
+            <EditText
+                android:id="@+id/Customers_name"
+                android:layout_width="350dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:drawablePadding="5dp"
+                android:hint="Name"
+                android:inputType="text"
+                android:textColorHint="#FFFF"
+                android:textSize="18sp"
+                android:textColor="@android:color/white"
+                android:backgroundTint="@android:color/holo_orange_light"
+                />
+
+            <EditText
+                android:id="@+id/quants"
+                android:layout_width="350dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="8dp"
+                android:drawablePadding="5dp"
+                android:hint="No. of days "
+                android:inputType="number"
+                android:textSize="18sp"
+                android:backgroundTint="@android:color/holo_orange_light"
+                android:textColor="@android:color/white"
+                android:textColorHint="@android:color/white"
+                />
+
+            <EditText
+                android:id="@+id/email"
+                android:layout_width="350dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="8dp"
+                android:drawablePadding="5dp"
+                android:hint="Email Id"
+                android:inputType="textEmailAddress"
+                android:textSize="18sp"
+                android:backgroundTint="@android:color/holo_orange_light"
+                android:textColor="@android:color/white"
+                android:textColorHint="@android:color/white"
+                />
+
+            <EditText
+                android:id="@+id/book_Up_to"
+                android:layout_width="350dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="8dp"
+                android:drawablePadding="5dp"
+                android:hint="Reserve upto"
+                android:inputType="number"
+                android:textSize="18sp"
+                android:backgroundTint="@android:color/holo_orange_light"
+                android:textColor="@android:color/white"
+                android:textColorHint="@android:color/white"
+                />
+
+            <Button
+                android:id="@+id/proceed"
+                android:layout_width="350dp"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_gravity="center_horizontal"
+                android:layout_margin="35dp"
+                android:layout_marginTop="64dp"
+                android:layout_marginBottom="14dp"
+                android:background="@drawable/rounded_edit_text"
+                android:text="Proceed"
+                android:elevation="8dp"
+                android:textAllCaps="false"
+                android:textColor="@android:color/black" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Version 1.0"
+                android:textColor="@android:color/white"
+                android:gravity="center_horizontal"
+                />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</ScrollView>
